@@ -26,9 +26,9 @@ O desafio é criar o backend para um sistema de gerenciamento de uma locadora de
 <a id="ancora2"></a>
 # Requisitos:
 
-Desenvolver uma API RESTful que implemente as operações CRUD (Create, Read, Update, Delete) para uma entidade de produto.
-A API deve ser integrada com um banco de dados relacional, como MySQL ou Sqlite.
-A API deve ser desenvolvida usando uma linguagem de programação backend Python, PHP ou Node.js.
+<li> Desenvolver uma API RESTful que implemente as operações CRUD (Create, Read, Update, Delete). </li>
+<li> A API deve ser integrada com um banco de dados relacional, como MySQL ou Sqlite. </li>
+<li> A API deve ser desenvolvida usando uma dessas linguagens de programação  Python, PHP ou Node.js. </li>
 
 #
 <a id="ancora3"></a>
