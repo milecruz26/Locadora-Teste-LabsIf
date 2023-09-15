@@ -73,5 +73,5 @@ A API deve suportar as seguintes operações CRUD:
 <a id="ancora6"></a>
 # Intruções:
 
-<li> para o inicio do teste, faça um clone desse repositorio ou um fork </li>
-<li> ao final do teste envie para esse endereços com o assunto "Teste Labs Backend" :  amanda.tavares@labsif.com.br /  contato@labsif.com.br </li>
+<li> Para o inicio do teste, faça um clone desse repositorio ou um fork </li>
+<li> Ao final do teste envie para esse endereços com o assunto "Teste Labs Backend" :  amanda.tavares@labsif.com.br /  contato@labsif.com.br </li>
