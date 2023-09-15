@@ -12,12 +12,15 @@ LabsIF : sistema para gerenciamento de uma locadora de carros
 - [Escopo](#ancora3)
 - [Criterios de Avaliação](#ancora4)
 - [Dicas](#ancora5)
+- [Instruções](#ancora6)
 
 #
 <a id="ancora1"></a>
 # Teste
 
 O desafio é criar o backend para um sistema de gerenciamento de uma locadora de carro.
+
+
 
 #
 <a id="ancora2"></a>
@@ -41,6 +44,7 @@ A API deve suportar as seguintes operações CRUD:
 
 [GET] /carros/{id} : Listar carro, apenas um carro específico, fornecendo o ID do carro.
 
+
 [PUT] /carros/{id} : Atualizar um carro, deve permitir que um usuário atualize as informações de um carro existente, fornecendo o ID do carro e as informações a serem atualizadas.
 
 [DELETE] /carros/{id}: Excluir um carro, deve permitir que um usuário exclua um carro existente, fornecendo o ID do carro.
@@ -59,8 +63,15 @@ A API deve suportar as seguintes operações CRUD:
 
 # 
 <a id="ancora5"></a>
-# Dicas: 
+# Dicas : 
 
 <li>Comece pelo básico e implemente as operações CRUD básicas primeiro.</li>
 <li>Use uma ferramenta de banco de dados para criar o esquema do banco de dados.</li>
 <li>Faça um boa documentação da api, utilizando  swagger. </li>
+
+#
+<a id="ancora6"></a>
+# Intruções:
+
+<li> para o inicio do teste, faça um clone desse repositorio ou um fork </li>
+<li> ao final do teste envie para esse endereços com o assunto "Teste Labs Backend" :  amanda.tavares@labsif.com.br /  contato@labsif.com.br </li>
