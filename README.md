@@ -27,8 +27,9 @@ O desafio é criar o backend para um sistema de gerenciamento de uma locadora de
 # Requisitos:
 
 <li> Desenvolver uma API RESTful que implemente as operações CRUD (Create, Read, Update, Delete). </li>
-<li> A API deve ser integrada com um banco de dados relacional, como MySQL ou Sqlite. </li>
-<li> A API deve ser desenvolvida usando uma dessas linguagens de programação  Python, PHP ou Node.js. </li>
+<li> A API deve ser integrada com um banco de dados relacional ou não, caso selecione relacional use a plataforma da Neon ou Vercel para criação de sua instância gratuita. </li>
+<li> Escolha uma plataforma de hospedagem para a sua aplicação, como Neon, Vercel ou outra de sua preferência e execulte o deploy.</li>
+<li> A API deve ser desenvolvida usando uma dessas linguagens de programação  Python, Java, Node.js ou TypeScript. </li>
 
 #
 <a id="ancora3"></a>
@@ -68,10 +69,11 @@ A API deve suportar as seguintes operações CRUD:
 <li>Comece pelo básico e implemente as operações CRUD básicas primeiro.</li>
 <li>Use uma ferramenta de banco de dados para criar o esquema do banco de dados.</li>
 <li>Faça um boa documentação da api, utilizando  swagger. </li>
+<li>Escolha um ORM (Object-Relational Mapping) para facilitar a interação com o banco de dados. Você pode utilizar SQLAlchemy para Python, Sequelize para Node.js, ou Mongoose para MongoDB, ou qualquer outro que lhe auxilie.</li>
 
 #
 <a id="ancora6"></a>
 # Intruções:
 
 <li> Para o inicio do teste, faça um clone desse repositorio ou um fork </li>
-<li> Ao final do teste envie para esse endereços com o assunto "Teste Labs Backend" :  amanda.tavares@labsif.com.br /  contato@labsif.com.br </li>
+<li> Ao final do teste envie para esse endereços com o assunto "Teste Labs Backend" :  processo.seletivo@labsif.com.br /  liriel.novais@labsif.com.br </li>
