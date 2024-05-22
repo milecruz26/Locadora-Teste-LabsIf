@@ -4,7 +4,8 @@ create table carros(
   marca text,
   descricao text,
   valor integer,
-  categoria text
+  categoria text,
+  disponivel boolean,
 );
 
 create table alugados(
