@@ -2,17 +2,17 @@ import { Request, Response } from "express";
 import { knex } from "../../bd/conexao";
 import { Carro } from "../../utils/tipos";
 
-// [GET] /carros : Listar todos os carros, deve permitir que um usuário liste todos os carros.
 const listaCarros = async (_: Request, res: Response) => {
   try {
     const carros = await knex("carros");
     return res.json(carros);
   } catch {
-    return res.status(500).json({ mensagem: "Erro interno do servidor" });
+    return res
+      .status(500)
+      .json({ mensagem: "Erro interno do servidor em listar carros" });
   }
 };
 
-// [GET] /carros/{id} : Listar carro, apenas um carro específico, fornecendo o ID do carro.
 const detalharCarro = async (req: Request, res: Response) => {
   const { id } = req.params;
   try {
@@ -24,15 +24,33 @@ const detalharCarro = async (req: Request, res: Response) => {
     }
     return res.json(carro);
   } catch (error) {
-    return res.status(500).json({ mensagem: "Erro interno do servidor" });
+    return res
+      .status(500)
+      .json({ mensagem: "Erro interno do servidor detalhar carro" });
   }
 };
 
-// [GET] /carros/disponiveis : Listar carros disponíveis, essa operação deve retornar uma lista de todos os carros que estão disponíveis para aluguel.
+const carrosDisponiveis = async (_: Request, res: Response) => {
+  try {
+    const carros = await knex("carros").where("disponivel", true);
+    return res.json(carros);
+  } catch (error) {
+    console.log(error);
+    return res
+      .status(500)
+      .json({ mensagem: "Erro interno do servidor de carro disponíveis" });
+  }
+};
 
-const carrosDisponiveis = async (req: Request, res: Response) => {};
-
-// [GET] /carros/alugados :Listar carros alugados, essa operação deve retornar uma lista de todos os carros que estão alugados.
-const carrosAlugados = async (req: Request, res: Response) => {};
+const carrosAlugados = async (_: Request, res: Response) => {
+  try {
+    const carros = await knex("carros").where("disponivel", false);
+    return res.json(carros);
+  } catch {
+    return res
+      .status(500)
+      .json({ mensagem: "Erro interno do servidor em carros alugados" });
+  }
+};
 
 export { listaCarros, detalharCarro, carrosDisponiveis, carrosAlugados };

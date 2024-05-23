@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import { knex } from "../../bd/conexao";
 import { Carro } from "../../utils/tipos";
 
-// [PUT] /carros/{id} : Atualizar um carro, deve permitir que um usuário atualize as informações de um carro existente, fornecendo o ID do carro e as informações a serem atualizadas.
 const atualizarCarro = async (req: Request, res: Response) => {
   const { id } = req.params;
   const { modelo, marca, descricao, valor, categoria } = req.body;

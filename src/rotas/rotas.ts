@@ -15,21 +15,18 @@ const rotas = Router();
 
 rotas.get("/carros", listaCarros);
 
-rotas.post("/carros", cadastrarCarro);
+rotas.post("/carro", cadastrarCarro);
 
-rotas.get("/carros/:id", detalharCarro);
+rotas.get("/carro/:id", detalharCarro);
 
-rotas.put("/carros/:id", atualizarCarro);
+rotas.put("/carro/:id", atualizarCarro);
 
-rotas.delete("/carros/:id", deletarCarro);
+rotas.delete("/carro/:id", deletarCarro);
 
-// [GET] /carros/disponiveis : Listar carros disponíveis, essa operação deve retornar uma lista de todos os carros que estão disponíveis para aluguel.
 rotas.get("/carros/disponiveis", carrosDisponiveis);
 
-// [POST] /carros/alugar : Alugar um carro, deve permitir que um usuário alugue um carro, fornecendo o ID do carro, a data e hora de início do aluguel e a data e hora de fim do aluguel.
-rotas.post("/carros/alugar", alugarCarro);
+rotas.post("/carro/alugar", alugarCarro);
 
-// [GET] /carros/alugados :Listar carros alugados, essa operação deve retornar uma lista de todos os carros que estão alugados.
 rotas.get("/carros/alugados", carrosAlugados);
 
 export default rotas;
