@@ -4,7 +4,9 @@
   "description": "LabsIF : sistema para gerenciamento de uma locadora de carros",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node ./src/index.ts"
+    "dev": "nodemon --exec ts-node ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
