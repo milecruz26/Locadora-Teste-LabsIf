@@ -26,7 +26,7 @@ rotas.get("/carros/:id", detalharCarro);
 rotas.put("/carros/:id", atualizarCarro);
 
 // [DELETE] /carros/{id}: Excluir um carro, deve permitir que um usuário exclua um carro existente, fornecendo o ID do carro.
-rotas.delete("carros/:id", deletarCarro);
+rotas.delete("/carros/:id", deletarCarro);
 
 // [GET] /carros/disponiveis : Listar carros disponíveis, essa operação deve retornar uma lista de todos os carros que estão disponíveis para aluguel.
 rotas.get("/carros/disponiveis", carrosDisponiveis);
