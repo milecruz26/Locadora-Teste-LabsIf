@@ -7,3 +7,10 @@ export type Carro = {
   categoria: string;
   disponivel: boolean;
 };
+
+export type Alugar = {
+  id: number;
+  carro_id: number;
+  retirada: string;
+  devolucao: string;
+};
